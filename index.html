@@ -22,11 +22,12 @@
       const xhttp = new XMLHttpRequest();
       xhttp.onload = function() {
         document.getElementById("demo").innerHTML = this.responseText;
+        const txt = xhttp.getAllResponseHeaders();
+        document.getElementById("D2").innerHTML = txt
       }
       xhttp.open("GET", "file.txt");
       
-      const txt = xhttp.getAllResponseHeaders();
-      document.getElementById("D2").innerHTML = txt
+
       xhttp.send();
     }
     </script>
