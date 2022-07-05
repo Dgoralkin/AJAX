@@ -2,13 +2,18 @@
 <html>
 <body>
 
+<div id="D1">
+<h1>The XMLHttpRequest Object EXMP</h>
+</div>
+    
+    
 <div id="demo">
-<h2>The XMLHttpRequest Object EXM</h2>
-<button type="button" onclick="loadDoc()">Change Content</button>
+<h2>This div will change</h2>
+<button type="button" onclick="loadFNK()">Change Content</button>
 </div>
 
 <script>
-    function loadDoc() {
+    function loadFNK() {
       const xhttp = new XMLHttpRequest();
       xhttp.onload = function() {
         document.getElementById("demo").innerHTML = this.responseText;
