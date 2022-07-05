@@ -24,9 +24,10 @@
         document.getElementById("demo").innerHTML = this.responseText;
       }
       xhttp.open("GET", "file.txt");
-      xhttp.send();
+      
       const txt = xhttp.getAllResponseHeaders();
       document.getElementById("D2").innerHTML = txt
+      xhttp.send();
     }
     </script>
 
