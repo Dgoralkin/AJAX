@@ -12,6 +12,10 @@
 <button type="button" onclick="loadFNK()">Change Content</button>
 </div>
 
+<div>
+    <h3 id="D2"></h3>
+</div>
+
 <script>
     function loadFNK() {
       const xhttp = new XMLHttpRequest();
@@ -20,7 +24,8 @@
       }
       xhttp.open("GET", "file.txt");
       xhttp.send();
-      xhttp.getAllResponseHeaders();
+      const txt = xhttp.getAllResponseHeaders();
+      document.getElementById("D2").innerHTML = txt
     }
     </script>
 
