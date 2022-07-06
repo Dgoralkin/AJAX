@@ -1,6 +1,3 @@
-# Ajax_2
+# Ajax
 This is a training in:
 Ajax
-Flask
-heroku
-Git
