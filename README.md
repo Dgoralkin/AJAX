@@ -1,3 +1,3 @@
 # Ajax
 This is a training in:
-Ajax
+Ajax and json
